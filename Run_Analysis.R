@@ -39,10 +39,11 @@ features <- read.table("features.txt")
 colnames(X_train) <- features$V2
 train <- cbind(xlabelstrain, X_train)
 
+#Combine test and train data
 testtrain <- rbind(test, train)
 #get only mean and std columns
 tidyData <- testtrain[, grep("Activity|Subject|mean|std", colnames(testtrain))]
 
-tidyData2 <- aggregate(tidyData[, 4:82], list(tidyData$Activity, tidyData$Subject), mean)
+tidyData2 <- aggregate(tidyData[, 4:82], list(Activity = tidyData$Activity, Subject = tidyData$Subject), mean)
 
 
