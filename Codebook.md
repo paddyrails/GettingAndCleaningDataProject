@@ -69,10 +69,10 @@ fBodyBodyGyroJerkMag-std() ,fBodyBodyGyroJerkMag-meanFreq()
 
 ##Variables in dataset tidyData2
 
-Group1
+Activity
     This is Group By Activity column
     
-Group2
+Subject
     This is the Group By Subject column
 
 And below are the mean and standard readings of triaxial acceleration and angular velocity from gyroscope.
